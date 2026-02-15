@@ -10,6 +10,8 @@ High-level release history for the Knowledge Panel Tracker.
 - Removed hallucinated schema recommendations (`author` on Person, `nationality`)
 - Missing property UI shows page attribution badges (🏠 homepage / 📄 about page / 📍 either)
 - Fixed secondary domain schema checker when entity has no pre-populated official URL
+- AI Analysis now receives about-page schema data; no longer recommends adding schemas that already exist on `/about`
+- Fixed `missingSchemas` serialization in LLM context (was outputting `[object Object]`)
 
 ## 2026-02-14
 
