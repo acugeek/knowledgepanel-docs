@@ -2,6 +2,15 @@
 
 High-level release history for the Knowledge Panel Tracker.
 
+## 2026-02-15
+
+- Multi-page schema analysis: `analyzeSchema` now fetches both homepage and `/about` page (with `/about-me`, `/bio`, `/about-us` fallbacks)
+- Page-aware schema requirements: each property tagged with target page (`home`, `about`, or `either`)
+- Entity Home Signals now detect AboutPage/ProfilePage schemas found on the about page
+- Removed hallucinated schema recommendations (`author` on Person, `nationality`)
+- Missing property UI shows page attribution badges (🏠 homepage / 📄 about page / 📍 either)
+- Fixed secondary domain schema checker when entity has no pre-populated official URL
+
 ## 2026-02-14
 
 - Entity-type-aware schema requirements (supports Person, Organization, Athlete, Musician, Actor, Author, Politician, BusinessPerson, Medical entity types)
