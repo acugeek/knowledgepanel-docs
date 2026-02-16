@@ -12,6 +12,7 @@ High-level release history for the Knowledge Panel Tracker.
 - Fixed secondary domain schema checker when entity has no pre-populated official URL
 - AI Analysis now receives about-page schema data; no longer recommends adding schemas that already exist on `/about`
 - Fixed `missingSchemas` serialization in LLM context (was outputting `[object Object]`)
+- Secondary domain checker now detects relationship type (same-entity vs founded-business vs employer) and adjusts recommendations accordingly — no longer recommends `sameAs` for separate businesses
 
 ## 2026-02-14
 
